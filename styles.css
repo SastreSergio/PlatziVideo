@@ -105,7 +105,7 @@ body {
     margin: 7rem 0px;
     padding-bottom: 1rem;
 }
-.carousel__item {
+.carousel-item {
     background-color: rgb(41, 103, 122);
     width: 20rem;
     height: 25rem;
@@ -116,15 +116,34 @@ body {
     cursor: pointer;
     transition: 450ms all;
     transform-origin: center left;
+    position: relative;
 }
-.carousel__item:hover ~ .carousel__item {
+.carousel-item:hover ~ .carousel-item {
     transform: translate3d(10rem, 0, 0);
 }
 
-.main__carousel__container:hover .carousel__item {
+.main__carousel__container:hover .carousel-item {
     opacity: 0.3;
 }
-.main__carousel__container:hover .carousel__item:hover {
+.main__carousel__container:hover .carousel-item:hover {
     transform: scale(1.5);
     opacity: 1;
+}
+
+.carousel-item__img {
+    width: 20rem;
+    object-fit: contain;    
+}
+
+.carousel-item__details {
+    background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    font-size: 1rem;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
