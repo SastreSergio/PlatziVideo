@@ -63,3 +63,68 @@ body {
 .header__menu li a:hover{
     text-decoration: underline;
 }
+
+.main__section {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__section--title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    background-color: rgba(144, 240, 253, 0.219);
+    border: 0.2rem solid white; 
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 1.6rem;
+    height: 3.5rem;
+    width: 70%;
+    padding: 0 2rem;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.main__carousel {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 3rem;
+    position: relative;
+}
+.main__carousel__container {
+    white-space: nowrap;
+    margin: 7rem 0px;
+    padding-bottom: 1rem;
+}
+.carousel__item {
+    background-color: rgb(41, 103, 122);
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+.carousel__item:hover ~ .carousel__item {
+    transform: translate3d(10rem, 0, 0);
+}
+
+.main__carousel__container:hover .carousel__item {
+    opacity: 0.3;
+}
+.main__carousel__container:hover .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
