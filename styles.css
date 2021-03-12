@@ -7,8 +7,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: #0093E9;
-    background-image: linear-gradient(0deg, #0093E9 0%, #80D0C7 100%);
+    background-image: linear-gradient( 181deg,  rgba(2,0,97,1) 15%, rgba(97,149,219,1) 158.5% );
     background-repeat: no-repeat;
     font-family: 'Mulish', sans-serif;
 }
@@ -94,10 +93,17 @@ body {
     color: white;
 }
 
+.main__title {
+    color: white;
+    font-size: 2.4rem;
+    margin-left: 3rem;
+    font-weight: bold;
+}
+
 .main__carousel {
     width: 100%;
     overflow-x: scroll;
-    padding: 3rem;
+    padding: 2rem 3rem 2rem 3rem;
     position: relative;
 }
 .main__carousel__container {
@@ -135,15 +141,50 @@ body {
     object-fit: contain;    
 }
 
-.carousel-item__details {
+.carousel-item__details {   
+    background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    font-size: 1rem;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 1rem;
+    position: absolute;
+    top: 17rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+.carousel-item__details--title {
+    font-weight: bold;
+}
+
+.carousel-item__details--icons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -0.2rem;
+}
+
+.carousel-item__details--play {
+    width: 3rem;
+    height: 3rem;
+}
+.carousel-item__details--plus {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.2rem;
+}
+
+.carousel-item__details:hover {
     background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
     font-size: 1rem;
     opacity: 1;
     transition: 450ms opacity;
     padding: 1rem;
     position: absolute;
-    top: 0;
+    top: 17rem;
     right: 0;
     bottom: 0;
     left: 0;
+    color: white;
 }
