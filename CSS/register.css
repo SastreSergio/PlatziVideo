@@ -21,16 +21,16 @@ body {
     margin-left: 1rem;
 }
 
-.login {
+.register {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 3rem;
-    min-height: calc(100vh - 30rem);
+    min-height: calc(100vh - 20rem);
 }
 
-.login__container {
+.register__container {
     background-color: rgba(255, 255, 255, 0.1);
     border: 0.2rem solid white;
     border-radius: 4rem;
@@ -43,69 +43,50 @@ body {
     justify-content: space-around;
 }
 
-.login__container h2 {
+.register__container h2 {
     padding-bottom: 2rem;
     font-size: 2.4rem;
 }
 
-.login__container--form {
+.register__container--form {
     display: flex;
     flex-direction: column;
 }
 
-.login__container--form label {
+.register__container--form label {
     font-size: 1.4rem;
 }
 
-
-.login__container--remember-me {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.login__container--remember-me a{
-    color: white;
-    font-size: 1.4rem;
-    text-decoration: none;
-}
-
-.login__container--remember-me a:hover{
-    color: white;
-    font-size: 1.4rem;
-    text-decoration: underline;
-}
-
-.login__container--social-media > div{
+.register__container--social-media div{
     display: flex;
     align-items: center;
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
     justify-content: center;
-    justify-self: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    cursor: pointer;
 }
-.login__container--social-media > div > figure img{
+.register__container--social-media div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.register__container--social-media > div > figure img{
     width: 3rem;
     margin-right: 1rem;
 }
 
-.login__container--register {
+.register__container--register {
     font-size: 1.4rem;
-    display: flex;
-    justify-content: center;
 }
 
-.login__container--register a {
+.register__container--register a {
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    margin-left: 1rem;
 }
 
-.login__container--register a:hover {
+.register__container--register a:hover {
     text-decoration: underline;
 }
 
@@ -145,6 +126,19 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.register__login {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: light;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+}
+
+.register__login:hover {
+    text-decoration: underline;
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -162,17 +156,4 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-    .login__container {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        width: 100%;
-    }
-    .footer {
-        align-items: flex-start;
-        flex-direction: column;
-    }
 }
