@@ -1,233 +1,247 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
+
 body {
-    background-image: linear-gradient( 181deg,  rgba(2,0,97,1) 15%, rgba(97,149,219,1) 158.5% );
-    background-repeat: no-repeat;
-    font-family: 'Mulish', sans-serif;
+  background-image: linear-gradient(181deg, #020061 15%, #6195db 158.5%);
+  background-repeat: no-repeat;
+  font-family: "Mulish", sans-serif;
 }
+
+.flex, .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header {
-    width: 100%;
-    height: 8rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.6rem;
-    align-items: center;
+  width: 100%;
+  height: 8rem;
+  font-size: 1.6rem;
 }
-.header__img {
-    width: 20rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+.header .header__img {
+  width: 20rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
-.header__menu {
-    margin-right: 3rem;
+.header .header__menu {
+  margin-right: 3rem;
 }
-.header__menu--profile {
-    margin-right: 0.8rem;
-    display: flex;
-    align-items: center;
+.header .header__menu--profile {
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
 }
-.header__menu--profile p{
-    margin: 0px;
-    color: white;
+.header .header__menu--profile p {
+  margin: 0px;
+  color: white;
 }
-.header__menu--profile img{
-   margin-right: 0.8rem;
-   width: 4rem;
+.header .header__menu--profile img {
+  margin-right: 0.8rem;
+  width: 4rem;
 }
-.header__menu ul {
-    display: none;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 10rem;
-    text-align: right;
-    margin: 0px 0px 0px -1rem;
+.header .header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 10rem;
+  text-align: right;
+  margin: 0px 0px 0px -1rem;
 }
-.header__menu:hover ul, ul:hover {
-    display: block;
+.header .header__menu:hover ul, .header ul:hover {
+  display: block;
 }
-.header__menu li {
-    margin: 1rem 0px;
+.header .header__menu li {
+  margin: 1rem 0px;
 }
-.header__menu li a{
-    color: white;
-    text-decoration: none;
+.header .header__menu li a {
+  color: white;
+  text-decoration: none;
 }
-.header__menu li a:hover{
-    text-decoration: underline;
+.header .header__menu li a:hover {
+  text-decoration: underline;
 }
 
 .main__section {
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.main__section--title {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.main__section .main__section--title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
-
-.categories__title {
-    color: white;
-    font-size: 1.6rem;
-    position: absolute;
-    padding-left: 3rem;
-    padding-top: 2rem;
-    width: 100%;
+.main__section .categories__title {
+  color: white;
+  font-size: 1.6rem;
+  position: absolute;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  width: 100%;
 }
-
-.input {
-    background-color: rgba(144, 240, 253, 0.219);
-    border: 0.2rem solid white; 
-    border-radius: 2.5rem;
-    color: white;
-    font-size: 1.6rem;
-    height: 3.5rem;
-    width: 70%;
-    padding: 0 2rem;
-    outline: none;
+.main__section .input {
+  background-color: rgba(144, 240, 253, 0.219);
+  border: 0.2rem solid white;
+  border-radius: 2.5rem;
+  color: white;
+  font-size: 1.6rem;
+  height: 3.5rem;
+  width: 70%;
+  padding: 0 2rem;
+  outline: none;
 }
-
-::placeholder {
-    color: white;
+.main__section ::placeholder {
+  color: white;
 }
 
 .main__title {
-    color: white;
-    font-size: 2.4rem;
-    margin-left: 3rem;
-    font-weight: bold;
+  color: white;
+  font-size: 2.4rem;
+  margin-left: 3rem;
+  font-weight: bold;
 }
 
 .main__carousel {
-    width: 100%;
-    overflow-x: scroll;
-    padding: 2rem 3rem 2rem 3rem;
-    position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 2rem 3rem 2rem 3rem;
+  position: relative;
 }
+
 .main__carousel::-webkit-scrollbar {
-    background-color: rgb(18, 9, 100);
+  background-color: #120964;
 }
+
 .main__carousel::-webkit-scrollbar-button {
-    background-color: rgb(39, 33, 90);
-    width: 3rem;
+  background-color: #27215a;
+  width: 3rem;
 }
+
 .main__carousel::-webkit-scrollbar-thumb {
-    background-color: rgb(39, 21, 206);
-    border-radius: 1rem;
+  background-color: #2715ce;
+  border-radius: 1rem;
 }
+
 .main__carousel::-webkit-scrollbar {
-    background-color: rgb(18, 9, 100);
+  background-color: #120964;
 }
+
 .main__carousel__container {
-    white-space: nowrap;
-    margin: 4rem 0px;
-    padding-bottom: 1rem;
+  white-space: nowrap;
+  margin: 4rem 0px;
+  padding-bottom: 1rem;
 }
+
 .carousel-item {
-    background-color: rgb(41, 103, 122);
-    width: 20rem;
-    height: 25rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    margin-right: 1rem;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
-    transform-origin: center left;
-    position: relative;
+  background-color: #29677a;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
 }
+
 .carousel-item:hover ~ .carousel-item {
-    transform: translate3d(10rem, 0, 0);
+  transform: translate3d(10rem, 0, 0);
 }
 
 .main__carousel__container:hover .carousel-item {
-    opacity: 0.3;
+  opacity: 0.3;
 }
+
 .main__carousel__container:hover .carousel-item:hover {
-    transform: scale(1.5);
-    opacity: 1;
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 .carousel-item__img {
-    width: 20rem;
-    object-fit: contain;    
+  width: 20rem;
+  object-fit: contain;
 }
 
-.carousel-item__details {   
-    background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
-    font-size: 1rem;
-    opacity: 0;
-    transition: 450ms opacity;
-    padding: 1rem;
-    position: absolute;
-    top: 17rem;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: white;
+.carousel-item__details {
+  background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+  font-size: 1rem;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 1rem;
+  position: absolute;
+  top: 17rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
 }
+
 .carousel-item__details--title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .carousel-item__details--icons {
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -0.2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -0.2rem;
 }
 
 .carousel-item__details--play {
-    width: 3rem;
-    height: 3rem;
+  width: 3rem;
+  height: 3rem;
 }
+
 .carousel-item__details--plus {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 0.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.2rem;
 }
 
 .carousel-item__details:hover {
-    background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
-    font-size: 1rem;
-    opacity: 1;
-    transition: 450ms opacity;
-    padding: 1rem;
-    position: absolute;
-    top: 17rem;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: white;
+  background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+  font-size: 1rem;
+  opacity: 1;
+  transition: 450ms opacity;
+  padding: 1rem;
+  position: absolute;
+  top: 17rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
 }
 
 .footer a {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.4rem;
-    padding-left: 3rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-left: 3rem;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
+/*# sourceMappingURL=styles.css.map */

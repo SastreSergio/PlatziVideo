@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    height: 93vh;
+    flex-flow: column nowrap;
+    font-size: 1.6rem;
+}
+
+.header {
+    outline: 1px solid rgb(7, 243, 192);
+    height: 3rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    list-style: none;
+    flex: 1;
+    outline: 1px solid cyan;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5s;
+}
+
+.menu-item:hover {
+    flex: 8;
+}
+
+.container {
+    outline: 1px solid blue;
+    display: flex;
+    height: inherit;
+}
+
+.content {
+    outline: 1px solid cyan;
+    /* flex grow, flex shirk, flex basis */
+    flex: 1;
+}
+
+.aside {
+    outline: 1px solid darkgoldenrod;
+    flex: 0 0 25%;
+}
+
+.footer {
+    outline: 1px solid cornflowerblue;
+    margin-top: auto;
+}
