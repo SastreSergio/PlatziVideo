@@ -74,7 +74,16 @@ body {
 .main__section--title {
     color: white;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.categories__title {
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    width: 100%;
 }
 
 .input {
@@ -106,9 +115,23 @@ body {
     padding: 2rem 3rem 2rem 3rem;
     position: relative;
 }
+.main__carousel::-webkit-scrollbar {
+    background-color: rgb(18, 9, 100);
+}
+.main__carousel::-webkit-scrollbar-button {
+    background-color: rgb(39, 33, 90);
+    width: 3rem;
+}
+.main__carousel::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 21, 206);
+    border-radius: 1rem;
+}
+.main__carousel::-webkit-scrollbar {
+    background-color: rgb(18, 9, 100);
+}
 .main__carousel__container {
     white-space: nowrap;
-    margin: 7rem 0px;
+    margin: 4rem 0px;
     padding-bottom: 1rem;
 }
 .carousel-item {
@@ -187,4 +210,24 @@ body {
     bottom: 0;
     left: 0;
     color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
